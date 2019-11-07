@@ -22,7 +22,7 @@ module AwsCli
 
         desc "authorize", "Add a rule to existing Security Group"
         method_option :group_id, :aliases => "-g", :required => true, :banner => "SGID", :type => :string, :desc => "ID of the security group to add a rule to"
-        method_option :protocol_type, :aliases => "-t", :required => true, :required => true, :banner => "TCP|UDP|ICMP", :type => :string, :desc => "Protocol Type to use for the rule"
+        method_option :protocol_type, :aliases => "-t", :required => true, :banner => "TCP|UDP|ICMP", :type => :string, :desc => "Protocol Type to use for the rule"
         method_option :start_port, :aliases => "-s", :required => true, :banner => "NUM", :type => :numeric, :desc => "Start of port range (or -1 for ICMP wildcard)"
         method_option :end_port, :aliases => "-e", :required => true, :banner => "NUM", :type => :numeric, :desc => "End of port range (or -1 for ICMP wildcard)"
         method_option :cidr, :aliases => "-c", :type => :string, :default => "0.0.0.0/0", :desc => "CIDR range"
@@ -33,7 +33,7 @@ module AwsCli
 
         desc "revoke", "Remove a rule from security group"
         method_option :group_id, :aliases => "-g", :required => true, :banner => "SGID", :type => :string, :desc => "ID of the security group to add a rule to"
-        method_option :protocol_type, :aliases => "-t", :required => true, :required => true, :banner => "TCP|UDP|ICMP", :type => :string, :desc => "Protocol Type to use for the rule"
+        method_option :protocol_type, :aliases => "-t", :required => true, :banner => "TCP|UDP|ICMP", :type => :string, :desc => "Protocol Type to use for the rule"
         method_option :start_port, :aliases => "-s", :required => true, :banner => "NUM", :type => :numeric, :desc => "Start of port range (or -1 for ICMP wildcard)"
         method_option :end_port, :aliases => "-e", :required => true, :banner => "NUM", :type => :numeric, :desc => "End of port range (or -1 for ICMP wildcard)"
         method_option :cidr, :aliases => "-c", :type => :string, :default => "0.0.0.0/0", :desc => "CIDR range"
